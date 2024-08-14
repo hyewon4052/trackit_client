@@ -23,52 +23,52 @@ body::after {
 .Menu {
     color: var(--header-fontcolor);
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: 1.11vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
 .LogoImage {
-    width: 31.392px;
-    height: 20.654px;
-    margin-left: 96px;
+    width: 2.18vw;
+    height: 1.43vw;
+    margin-left: 6.66vw;
 }
 
 .Trackit {
     color: #000;
     font-family: var(--main-font);
-    font-size: 20px;
+    font-size: 1.38vw;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    margin-top: -4px;
+    margin-top: -0.27vw;
 }
 
 .NavAllContainer, .TrackitContainer, .MenuContainer {
     display: flex;
-    margin-top: 26px;
+    margin-top: 1.80vw;
     cursor: pointer;
 }
 
 .TrackitContainer {
-    column-gap: 10px;
+    column-gap: 0.69vw;
 }
 
 .MenuContainer {
-    margin-left: 330px;
-    column-gap: 50px;
+    margin-left: 22.91vw;
+    column-gap: 3.47vw;
 }
 
 .SearchContainer {
     background-color: #F5F6FA;
-    border-radius: 30px;
-    width: 278px;
-    height: 45px;
+    border-radius: 2.08vw;
+    width: 19.30vw;
+    height: 3.12vw;
     display: flex;
     align-items: center;
-    margin-top: 14px;
-    margin-left: 250px;
+    margin-top: 0.97vw;
+    margin-left: 15.36vw;
 }
 
 #SearchBar {
@@ -76,10 +76,10 @@ body::after {
     outline: none;
     border: none;
     flex-grow: 1;
-    padding-left: 12px;
+    padding-left: 0.83vw;
     color: #AAB2C8;
     font-family: Pretendard;
-    font-size: 13px;
+    font-size: 0.90vw;
     font-style: normal;
     font-weight: 500;
 }
@@ -89,17 +89,17 @@ body::after {
 }
 
 .SearchContainer > i {
-    width: 24px;
-    height: 24px;
+    width: 1.66vw;
+    height: 1.66vw;
     color: var(--header-fontcolor);
-    margin-right: 7px;
+    margin-right: 0.48vw;
     font-weight: bold;
 }
 
 input::placeholder {
     color: #AAB2C8;
     font-family: Pretendard;
-    font-size: 13px;
+    font-size: 0.90vw;
     font-style: normal;
     font-weight: 500;
 }
