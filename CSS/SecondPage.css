@@ -1,0 +1,251 @@
+/* 헤더 배경색 */
+header {
+    position: fixed;
+    /* background-color: white; */
+    padding-bottom: 1.38vw;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.Menu {
+    color: var(--header-fontcolor);
+    font-family: var(--main-font);
+    font-size: 0.95vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Menu4 {
+    color: var(--sub-buttoncolor);
+}
+
+#Menu4::after { /* 선택된 요소의 마지막 자식으로 추가적인 콘텐츠를 삽입할 수 있게 해줌 */
+    content: ''; /* 화면에 빈 요소를 생성 */
+    position: absolute; /* 가상 요소를 절대 위치로 배치 */
+    bottom: 0; /* 가상 요소의 하단을 부모 요소의 하단과 일치시키는 속성 */
+    left: 57.6%; /* 원하는 만큼 확장 시작점 조정 */
+    width: 4.5%; /* 원하는 길이로 조정 */
+    height: 0.20vw; /* 기존 border-bottom의 두께와 동일하게 설정 */
+    background-color: var(--sub-buttoncolor); /* border와 동일한 색상 */
+    border-radius: 0 0 0.10vw 0.10vw; /* 하단 모서리 둥글게 */
+    margin-bottom: 1.04vw;
+}
+
+.LogoImage {
+    width: 2.18vw;
+    height: 1.43vw;
+    margin-left: 6.66vw;
+}
+
+.Trackit {
+    color: #000;
+    font-family: var(--main-font);
+    font-size: 1.38vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: -0.27vw;
+}
+
+.NavAllContainer, .TrackitContainer, .MenuContainer {
+    display: flex;
+    margin-top: 1.80vw;
+    cursor: pointer;
+}
+
+.TrackitContainer {
+    column-gap: 0.69vw;
+}
+
+.MenuContainer {
+    margin-left: 22.91vw;
+    column-gap: 3.47vw;
+}
+
+.SearchContainer {
+    background-color: #F5F6FA;
+    border-radius: 2.08vw;
+    width: 17.30vw;
+    height: 2.65vw;
+    display: flex;
+    align-items: center;
+    margin-top: 0.97vw;
+    margin-left: 15.36vw;
+}
+
+#SearchBar {
+    background: none;
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    padding-left: 0.83vw;
+    color: #AAB2C8;
+    font-family: var(--main-font);
+    font-size: 0.90vw;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#SearchBar :focus {
+    outline: none;
+}
+
+.SearchContainer > i {
+    width: 1.66vw;
+    height: 1.66vw;
+    color: var(--header-fontcolor);
+    margin-right: 0.48vw;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #AAB2C8;
+    font-family: var(--main-font);
+    font-size: 0.90vw;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.MainLogoImage {
+    width: 2.43vw;
+    height: 1.66vw;
+    cursor: pointer;
+}
+
+.MainTrackit {
+    color: #000;
+    font-family: var(--main-font);
+    font-size: 2.15vw;
+    font-weight: bolder;
+    margin-top: -0.67vw;
+    margin-left: 0.47vw;
+    cursor: pointer;
+}
+
+.TrackitSection {
+    display: flex;
+}
+
+.WriteLogin {
+    background-color: #fff;
+    border-radius: 0.55vw;
+    width: 30.84vw;
+    height: 6.82vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.08vw;
+}
+
+.AllSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#WriteEmail, #WritePassword {
+    flex-grow: 1;
+    padding-left: 0.83vw;
+    color: #AAB2C8;
+    font-family: var(--main-font);
+    font-size: 0.90vw;
+    width: 17.84vw;
+    height: 3.85vw;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 0.55vw;
+    border: 0.12vw solid #9DFFB3;
+    background: #FFF;
+}
+
+#WritePassword {
+    margin-top: 0.83vw;
+}
+
+.LoginButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.29vw;
+    background: var(--main-color);
+    width: 9.80vw;
+    height: 2.98vw;
+    margin-top: 2.77vw;
+    box-shadow: 0 0 0.69vw 0 hsl(133, 100%, 81%);
+}
+
+.LogIn {
+    outline: none;
+    border: none;
+    background: none;
+    color: #FFF;
+    font-family: var(--main-font);
+    font-size: 0.86vw;
+    font-weight: 700;
+}
+
+#WriteEmail:focus, #WritePassword:focus {
+    box-shadow: 0 0 0.69vw hsl(133, 100%, 81%); /* 외곽선에 블러 효과 */
+    outline: 0.01vw solid #9effb3;
+}
+
+.AllSection {
+    margin-top: 13.19vw;
+}
+
+.LoginLine1 {
+    color: #CBCBCB;
+    font-family: var(--main-font);
+    font-size: 0.87vw;
+    font-weight: 500;
+    margin: 2.77vw 0;
+    cursor: pointer;
+}
+
+/* 이 부분 코드 너무 어려워요ㅠㅠ 가독성이 별로이게 짜버린... */
+.LoginLine1::before,
+.LoginLine1::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    width: 11%;
+    border-bottom: 0.06vw solid #ECECEC;
+}
+
+.LoginLine1::before {
+    left: 0;
+    margin-left: 30%;
+}
+
+.LoginLine1::after {
+    right: 0;
+    margin-right: 30%;
+}
+
+.OtherLogin {
+    flex-grow: 1;
+    border-radius: 0.55vw;
+    background: #FFF;
+    box-shadow: 0 0 0.69vw 0 rgba(0, 0, 0, 0.06);
+    width: 19.84vw;
+    height: 2.95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.38vw;
+}
+
+.LogInGoogle {
+    outline: none;
+    background: none;
+    border: none;
+    padding-left: 0.83vw;
+    color: #AAA;
+    font-family: var(--main-font);
+    font-size: 0.87vw;
+    font-weight: 500;
+}
