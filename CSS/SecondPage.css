@@ -27,7 +27,7 @@ html{
     content: ''; /* 화면에 빈 요소를 생성 */
     position: absolute; /* 가상 요소를 절대 위치로 배치 */
     bottom: 0; /* 가상 요소의 하단을 부모 요소의 하단과 일치시키는 속성 */
-    left: 57.6%; /* 원하는 만큼 확장 시작점 조정 */
+    left: 56.2%; /* 원하는 만큼 확장 시작점 조정 */
     width: 4.5%; /* 원하는 길이로 조정 */
     height: 0.20vw; /* 기존 border-bottom의 두께와 동일하게 설정 */
     background-color: var(--sub-buttoncolor); /* border와 동일한 색상 */
@@ -211,7 +211,7 @@ input::placeholder {
 .LoginLine1::after {
     content: "";
     position: absolute;
-    top: 70%;
+    top: 69.5%;
     width: 11%;
     border-bottom: 0.06vw solid #ECECEC;
 }
