@@ -10,6 +10,11 @@ html{
     height: 100%;
 }
 
+.NavAllContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Menu {
     color: var(--header-fontcolor);
     font-family: var(--main-font);
@@ -27,7 +32,7 @@ html{
     content: ''; /* 화면에 빈 요소를 생성 */
     position: absolute; /* 가상 요소를 절대 위치로 배치 */
     bottom: 0; /* 가상 요소의 하단을 부모 요소의 하단과 일치시키는 속성 */
-    left: 56.2%; /* 원하는 만큼 확장 시작점 조정 */
+    left: 59.3%; /* 원하는 만큼 확장 시작점 조정 */
     width: 4.5%; /* 원하는 길이로 조정 */
     height: 0.20vw; /* 기존 border-bottom의 두께와 동일하게 설정 */
     background-color: var(--sub-buttoncolor); /* border와 동일한 색상 */
@@ -45,6 +50,7 @@ html{
     color: #000;
     font-family: var(--main-font);
     font-size: 1.38vw;
+    width: 17.30vw;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -62,7 +68,6 @@ html{
 }
 
 .MenuContainer {
-    margin-left: 22.91vw;
     column-gap: 3.47vw;
 }
 
@@ -74,7 +79,7 @@ html{
     display: flex;
     align-items: center;
     margin-top: 0.97vw;
-    margin-left: 15.36vw;
+    margin-right: 6.66vw;
 }
 
 #SearchBar {
