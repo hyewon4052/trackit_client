@@ -16,6 +16,11 @@ html{
     );
 }
 
+.NavAllContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Menu {
     color: var(--header-fontcolor);
     font-family: var(--main-font);
@@ -34,6 +39,7 @@ html{
 .Trackit {
     color: #000;
     font-family: var(--main-font);
+    width: 17.30vw;
     font-size: 1.38vw;
     font-style: normal;
     font-weight: 900;
@@ -52,7 +58,6 @@ html{
 }
 
 .MenuContainer {
-    margin-left: 22.91vw;
     column-gap: 3.47vw;
 }
 
@@ -64,7 +69,7 @@ html{
     display: flex;
     align-items: center;
     margin-top: 0.97vw;
-    margin-left: 15.36vw;
+    margin-right: 6.66vw;
 }
 
 #SearchBar {
