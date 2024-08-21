@@ -5,7 +5,7 @@ header {
     padding-bottom: 1.38vw;
 }
 
-html{
+html {
     width: 100%;
     height: 100%;
 }
@@ -28,15 +28,24 @@ html{
     color: var(--sub-buttoncolor);
 }
 
-#Menu3::after { /* 선택된 요소의 마지막 자식으로 추가적인 콘텐츠를 삽입할 수 있게 해줌 */
-    content: ''; /* 화면에 빈 요소를 생성 */
-    position: absolute; /* 가상 요소를 절대 위치로 배치 */
-    bottom: 0; /* 가상 요소의 하단을 부모 요소의 하단과 일치시키는 속성 */
-    left: 47.8%; /* 원하는 만큼 확장 시작점 조정 */
-    width: 4.5%; /* 원하는 길이로 조정 */
-    height: 0.20vw; /* 기존 border-bottom의 두께와 동일하게 설정 */
-    background-color: var(--sub-buttoncolor); /* border와 동일한 색상 */
-    border-radius: 0 0 0.10vw 0.10vw; /* 하단 모서리 둥글게 */
+#Menu3::after {
+    /* 선택된 요소의 마지막 자식으로 추가적인 콘텐츠를 삽입할 수 있게 해줌 */
+    content: '';
+    /* 화면에 빈 요소를 생성 */
+    position: absolute;
+    /* 가상 요소를 절대 위치로 배치 */
+    bottom: 0;
+    /* 가상 요소의 하단을 부모 요소의 하단과 일치시키는 속성 */
+    left: 47.8%;
+    /* 원하는 만큼 확장 시작점 조정 */
+    width: 4.5%;
+    /* 원하는 길이로 조정 */
+    height: 0.20vw;
+    /* 기존 border-bottom의 두께와 동일하게 설정 */
+    background-color: var(--sub-buttoncolor);
+    /* border와 동일한 색상 */
+    border-radius: 0 0 0.10vw 0.10vw;
+    /* 하단 모서리 둥글게 */
     margin-bottom: 1.04vw;
 }
 
@@ -57,7 +66,9 @@ html{
     margin-top: -0.27vw;
 }
 
-.NavAllContainer, .TrackitContainer, .MenuContainer {
+.NavAllContainer,
+.TrackitContainer,
+.MenuContainer {
     display: flex;
     margin-top: 1.80vw;
     cursor: pointer;
@@ -100,7 +111,7 @@ html{
     outline: none;
 }
 
-.SearchContainer > i {
+.SearchContainer>i {
     width: 1.66vw;
     height: 1.66vw;
     color: var(--header-fontcolor);
@@ -153,7 +164,8 @@ input::placeholder {
     align-items: center;
 }
 
-#WriteEmail, #WritePassword {
+#WriteEmail,
+#WritePassword {
     flex-grow: 1;
     padding-left: 0.83vw;
     color: #AAB2C8;
@@ -194,8 +206,10 @@ input::placeholder {
     font-weight: 700;
 }
 
-#WriteEmail:focus, #WritePassword:focus {
-    box-shadow: 0 0 0.69vw hsl(133, 100%, 81%); /* 외곽선에 블러 효과 */
+#WriteEmail:focus,
+#WritePassword:focus {
+    box-shadow: 0 0 0.69vw hsl(133, 100%, 81%);
+    /* 외곽선에 블러 효과 */
     outline: 0.01vw solid #9effb3;
 }
 
@@ -254,4 +268,109 @@ input::placeholder {
     font-family: var(--main-font);
     font-size: 0.87vw;
     font-weight: 500;
+}
+
+.AllTitle {
+    display: flex;
+    width: 803.959px;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.AllContent {
+    margin-top: 40px;
+}
+
+
+.BigTitle1 {
+    color: #000;
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 140%;
+    /* 30.8px */
+}
+
+.SmallTitle {
+    display: flex;
+    width: 454.974px;
+    padding: 5.368px;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px #B3B3B3 solid;
+    width: 40.5%;
+}
+
+#SmallTitle1::placeholder {
+    color: #AAA;
+    font-family: var(--main-font);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+#SmallTitle1 {
+    font-size: 14px;
+    outline: none;
+    border: none;
+    font-weight: 200;
+}
+
+#SmallTitle1 :focus {
+    outline: none;
+}
+
+.SmallContent ::placeholder {
+    font-weight: 200;
+    font-size: 14px;
+    color: #BFBFBF;
+}
+
+#SmallContent1 {
+    margin-top: 5px;
+    font-family: var(--main-font);
+    resize: none;
+    width: 1241px;
+    height: 213px;
+    padding-left: 19.506px;
+    padding-top: 17.759px;
+    border-radius: 10.316px;
+    outline: none;
+    border: 1.3px solid var(--GRAY-B3B3B3, #B3B3B3);
+}
+
+.AllC {
+    margin-top: 140px;
+    margin-left: 70px;
+}
+
+.AllC1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BTC {
+    width: 220.499px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--sub-buttoncolor);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.BTC1 {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFF;
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.BigTitle1 {
+    cursor: pointer;
 }
