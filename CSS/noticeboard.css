@@ -1,0 +1,119 @@
+/* 헤더 배경색 */
+header {
+    position: fixed;
+    /* background-color: white; */
+    padding-bottom: 1.38vw;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.NavAllContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Menu {
+    color: var(--header-fontcolor);
+    font-family: var(--main-font);
+    font-size: 0.95vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Menu2 {
+    color: var(--sub-buttoncolor);
+}
+
+#Menu2::after {
+    /* 선택된 요소의 마지막 자식으로 추가적인 콘텐츠를 삽입할 수 있게 해줌 */
+    content: '';
+    /* 화면에 빈 요소를 생성 */
+    position: absolute;
+    /* 가상 요소를 절대 위치로 배치 */
+    bottom: 0;
+    /* 가상 요소의 하단을 부모 요소의 하단과 일치시키는 속성 */
+    left: 41vw;
+    /* 원하는 만큼 확장 시작점 조정 */
+    width: 4.5%;
+    /* 원하는 길이로 조정 */
+    height: 0.20vw;
+    /* 기존 border-bottom의 두께와 동일하게 설정 */
+    background-color: var(--sub-buttoncolor);
+    /* border와 동일한 색상 */
+    border-radius: 0 0 0.10vw 0.10vw;
+    /* 하단 모서리 둥글게 */
+    margin-bottom: 1.04vw;
+}
+
+.LogoImage {
+    width: 2.18vw;
+    height: 1.43vw;
+    margin-left: 6.66vw;
+}
+
+.Trackit {
+    color: #000;
+    font-family: var(--main-font);
+    font-size: 1.38vw;
+    font-style: normal;
+    width: 17.30vw;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: -0.27vw;
+}
+
+.NavAllContainer,
+.TrackitContainer,
+.MenuContainer {
+    display: flex;
+    margin-top: 1.80vw;
+    cursor: pointer;
+}
+
+.TrackitContainer {
+    column-gap: 0.69vw;
+}
+
+.MenuContainer {
+    margin-right: 30px;
+    column-gap: 3.47vw;
+}
+
+.SearchContainer {
+    background-color: #F5F6FA;
+    border-radius: 2.08vw;
+    width: 17.30vw;
+    height: 2.65vw;
+    display: flex;
+    align-items: center;
+    margin-top: 0.97vw;
+    margin-right: 6.66vw;
+}
+
+#SearchBar {
+    background: none;
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    padding-left: 0.83vw;
+    font-family: var(--main-font);
+    font-size: 0.90vw;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#SearchBar :focus {
+    outline: none;
+}
+
+.SearchContainer>i {
+    width: 1.66vw;
+    height: 1.66vw;
+    color: var(--header-fontcolor);
+    margin-right: 0.48vw;
+    font-weight: bold;
+}
