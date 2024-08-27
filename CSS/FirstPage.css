@@ -1,74 +1,75 @@
 /* 헤더 배경색 */
 header {
-    background-color: white;
+    position: fixed;
+    /* background-color: white; */
+    padding-bottom: 1.38vw;
 }
 
-/* 헤더 바로 아래 배경색 */
-body::after {
-    content: "";
-    display: block;
+html{
     width: 100%;
     height: 100%;
-    background: linear-gradient(
+    background-image: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.30) 0%,
         rgba(142, 255, 167, 0.30) 55.4%,
         rgba(0, 255, 57, 0.30) 100%
     );
-    position: absolute;
-    z-index: -1;
 }
 
+.NavAllContainer {
+    display: flex;
+    justify-content: space-between;
+}
 
 .Menu {
     color: var(--header-fontcolor);
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: 0.95vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
 .LogoImage {
-    width: 31.392px;
-    height: 20.654px;
-    margin-left: 96px;
+    width: 2.18vw;
+    height: 1.43vw;
+    margin-left: 6.66vw;
 }
 
 .Trackit {
     color: #000;
     font-family: var(--main-font);
-    font-size: 20px;
+    width: 17.30vw;
+    font-size: 1.38vw;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     line-height: normal;
-    margin-top: -4px;
+    margin-top: -0.27vw;
 }
 
 .NavAllContainer, .TrackitContainer, .MenuContainer {
     display: flex;
-    margin-top: 26px;
+    margin-top: 1.80vw;
     cursor: pointer;
 }
 
 .TrackitContainer {
-    column-gap: 10px;
+    column-gap: 0.69vw;
 }
 
 .MenuContainer {
-    margin-left: 330px;
-    column-gap: 50px;
+    column-gap: 3.47vw;
 }
 
 .SearchContainer {
     background-color: #F5F6FA;
-    border-radius: 30px;
-    width: 278px;
-    height: 45px;
+    border-radius: 2.08vw;
+    width: 17.30vw;
+    height: 2.65vw;
     display: flex;
     align-items: center;
-    margin-top: 14px;
-    margin-left: 250px;
+    margin-top: 0.97vw;
+    margin-right: 6.66vw;
 }
 
 #SearchBar {
@@ -76,10 +77,9 @@ body::after {
     outline: none;
     border: none;
     flex-grow: 1;
-    padding-left: 12px;
-    color: #AAB2C8;
-    font-family: Pretendard;
-    font-size: 13px;
+    padding-left: 0.83vw;
+    font-family: var(--main-font);
+    font-size: 0.90vw;
     font-style: normal;
     font-weight: 500;
 }
@@ -89,17 +89,135 @@ body::after {
 }
 
 .SearchContainer > i {
-    width: 24px;
-    height: 24px;
+    width: 1.66vw;
+    height: 1.66vw;
     color: var(--header-fontcolor);
-    margin-right: 7px;
+    margin-right: 0.48vw;
     font-weight: bold;
 }
 
 input::placeholder {
     color: #AAB2C8;
-    font-family: Pretendard;
-    font-size: 13px;
+    font-family: var(--main-font);
+    font-size: 0.90vw;
     font-style: normal;
     font-weight: 500;
+}
+
+.ServiceGuide {
+    border-radius: 2.0833vw;
+    border: 0.0694vw solid var(--main-color);
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(0.1389vw);
+    width: 15.50vw;
+    height: 2.12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.25vw;
+}
+
+.ServiceGuide1 {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--main-font);
+    font-size: 0.84vw;
+    color: var(--main-color);
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AllContainer {
+    position: fixed;
+    top: 140px;
+    width: 69.44vw;
+    height: 32.19vw;
+    border-radius: 3.4722vw;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0.0000vw 0.9028vw 3.3472vw 0.0000vw rgba(90, 229, 121, 0.14);
+    backdrop-filter: blur(0.0694vw);
+    display: flex;
+    justify-content: center;
+}
+
+.GuideText {
+    text-align: center;
+    cursor: pointer;
+}
+
+.LostThing {
+    color: #002;
+    font-family: var(--main-font);
+    font-size: 1.95vw;
+    font-weight: 400;
+    margin-top: 1.38vw;
+}
+
+.FindThing {
+    color: #002;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1.95vw;
+    font-weight: 900;
+    margin-top: 0.48vw;
+}
+
+.SmallContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TwoButton {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.69vw;
+    margin-top: 3.47vw;
+}
+
+.LookGuide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.29vw;
+    background: var(--main-color);
+    width: 11.80vw;
+    height: 2.98vw;
+}
+
+.WriteGuide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.29vw;
+    border: 0.06vw solid var(--main-color);
+    background: #FFF;
+    width: 11.80vw;
+    height: 2.98vw;
+}
+
+.LookGuide1 {
+    outline: none;
+    border: none;
+    background: none;
+    color: #FFF;
+    font-family: var(--main-font);
+    font-size: 0.86vw;
+    font-weight: 700;
+}
+
+.WriteGuide1 {
+    outline: none;
+    border: none;
+    background: none;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 0.86vw;
+    font-weight: 700;
 }

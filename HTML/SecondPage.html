@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondPage</title>
+    <link rel="stylesheet" href="/CSS/SecondPage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="NavAllContainer">
+            <div class="TrackitContainer">
+                <img src="/IMAGE/TrackitLogo.png" class="LogoImage">
+                <p class="Trackit"><a href="/HTML/FirstPage.html">Trackit</a></p>
+            </div>
+            <ul class="MenuContainer">
+                <li class="Menu">게시판</li>
+                <li class="Menu"><a href="/HTML/ThirdPage.html">문의 하기</a></li>
+                <li class="Menu">등록 하기</li>
+                <li class="Menu" id="Menu4">로그인</li>
+            </ul>
+            <div class="SearchContainer">
+                <input type="text" id="SearchBar" placeholder="원하는 물건을 찾아주세요.">
+                <i class="bi bi-search"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="AllSection">
+        <section class="TrackitSection">
+            <img src="/IMAGE/TrackitLogo.png" class="MainLogoImage">
+            <p class="MainTrackit">Trackit</p>
+        </section>
+        <section class="WriteLogin">
+            <input type="text" id="WriteEmail" placeholder="이메일 작성하기">
+            <input type="password" id="WritePassword" placeholder="비밀번호 작성하기">
+        </section>
+        <section class="LoginButton">
+                <input class="LogIn" type="button" value="로그인" />
+        </section>
+        <section class="LoginLine">
+            <p class="LoginLine1">로그인 및 회원가입 하기</p>
+        </section>
+        <section class="OtherLogin">
+            <img src="/IMAGE/GoogleLogo.png" class="GoogleLogo">
+            <input class="LogInGoogle" type="button" value="학교 구글 계정으로 로그인" />
+        </section>
+    </section>
+    </div>
+</body>
+</html>
